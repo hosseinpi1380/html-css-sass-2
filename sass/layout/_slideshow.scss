@@ -1,3 +1,6 @@
+body{
+    animation: sample 4s linear infinite;
+};
 .slideshow {
     grid-column: 1/-1;
     grid-row: 2/3;
@@ -11,6 +14,8 @@
         left: 0;
         width: inherit;
         height: inherit;
+        // animation: slideshow 20s linear infinite;
+       
 
         img {
             width: inherit;
@@ -38,31 +43,48 @@
             font-size: size(sm);
         }
     }
-}
+};
+
 
 @keyframes slideshow {
     0% {
         visibility: hidden;
         opacity: 0;
-    }
+    };
 
     2% {
         visibility: visible;
         opacity: 1;
-    }
+    };
 
     18% {
         visibility: visible;
         opacity: 1;
-    }
+    };
 
     20% {
         visibility: hidden;
         opacity: 0;
-    }
+    };
 
     100% {
         visibility: hidden;
         opacity: 0;
-    }
-}
+    }};
+    @keyframes sample {
+        0%{
+            background-color: purple;
+        };
+        25%{
+            background-color: red;
+        };
+        50%{
+            background-color: blue;
+        };
+        75%{
+            background-color: orangered;
+        };
+        100%{
+            background-color: black;
+        };
+    };
