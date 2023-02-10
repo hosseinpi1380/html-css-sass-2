@@ -1,0 +1,68 @@
+.slideshow {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    position: relative;
+    width: 100%;
+    height: 80vh;
+
+    &-slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: inherit;
+        height: inherit;
+
+        img {
+            width: inherit;
+            height: inherit;
+            object-fit: cover;
+        }
+    }
+
+    &-content {
+        background-color: rgba(color(secondary), 0.9);
+        position: absolute;
+        bottom: 6rem;
+        left: 6rem;
+        max-width: 40rem;
+        padding: 5rem;
+
+        h2 {
+            font-size: 35px;
+            color: color(primary);
+            font-weight: bold;
+        }
+
+        p {
+            margin: 1rem 0;
+            font-size: size(sm);
+        }
+    }
+}
+
+@keyframes slideshow {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    2% {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    18% {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    20% {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    100% {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
