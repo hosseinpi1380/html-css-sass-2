@@ -64,8 +64,8 @@
         }
 
         &-btn {
-            font-size: 35px;
             text-decoration: none;
+            font-size: 35px;
             color: color(quaternary);
             display: block;
             padding: .5rem 1rem;
@@ -73,4 +73,7 @@
             background-color: lighten(color(primary), 20%);
         }
     }
+}
+.products-btn{
+    @include flexPosition;
 }

@@ -1,0 +1,54 @@
+.btn{
+    width: 16rem;
+    height: 4rem;
+    text-decoration: none;
+    // border: .1rem solid #000;
+    @include flexPosition(space-around);
+    position: relative;
+    &:hover .btn-bg{
+        width: 18rem;
+    }
+    &:hover .btn-text{
+        z-index: 100;
+        color: color(secondary);
+    }
+
+    &-bg{
+        width: 4rem;
+        height: 4rem;
+        background-color: color(primary);
+        border-radius: 5rem;
+        position: absolute;
+        left: 0;
+        transition: all .2s;
+
+
+    }
+    &-text{
+        font-size: 20px;
+        text-transform: uppercase;
+        color: color(primary);
+    }
+    .arrow{
+        @include flexPosition;
+        &-line{
+            height: .2rem;
+            background-color: color(secondary);
+            position: absolute;
+            transform-origin: right;
+            
+        }
+        &-line-1{
+            width: 0;
+            transform: translateX(-.7rem);
+        }
+        &-line-2{
+            width: 1rem;
+            transform: rotateZ(45deg);
+        }
+        &-line-3{
+            width: 1rem;
+            transform: rotateZ(-45deg);
+        }
+    }
+}

@@ -255,13 +255,19 @@ body {
   font-weight: 600;
 }
 .product-description-btn {
-  font-size: 35px;
   text-decoration: none;
+  font-size: 35px;
   color: #f5b149;
   display: block;
   padding: 0.5rem 1rem;
   border: 0.1rem solid #f5b149;
   background-color: #666666;
+}
+
+.products-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .dropdown-li {
@@ -330,4 +336,58 @@ body {
 .logo-img {
   width: 10rem;
   height: 100%;
+}
+
+.btn {
+  width: 16rem;
+  height: 4rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+.btn:hover .btn-bg {
+  width: 18rem;
+}
+.btn:hover .btn-text {
+  z-index: 100;
+  color: #ffe;
+}
+.btn-bg {
+  width: 4rem;
+  height: 4rem;
+  background-color: #333;
+  border-radius: 5rem;
+  position: absolute;
+  left: 0;
+  transition: all 0.2s;
+}
+.btn-text {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #333;
+}
+.btn .arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn .arrow-line {
+  height: 0.2rem;
+  background-color: #ffe;
+  position: absolute;
+  transform-origin: right;
+}
+.btn .arrow-line-1 {
+  width: 0;
+  transform: translateX(-0.7rem);
+}
+.btn .arrow-line-2 {
+  width: 1rem;
+  transform: rotateZ(45deg);
+}
+.btn .arrow-line-3 {
+  width: 1rem;
+  transform: rotateZ(-45deg);
 }/*# sourceMappingURL=main.css.map */
